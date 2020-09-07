@@ -122,7 +122,7 @@ func (s *DB) insertTo(tableName string) error {
 	placeHolders := strings.Repeat("?,", len(columns))
 	placeHolders = fmt.Sprintf("(%s)", strings.TrimSuffix(placeHolders, ","))
 	query := fmt.Sprintf("INSERT INTO %s ("+strings.Join(columns, ",")+") VALUES ", tableName)
-	insertLimit := 1000
+	insertLimit := 1500
 
 	s.log.Debugf("добавляем в %s", tableName)
 

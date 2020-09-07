@@ -34,9 +34,9 @@ mod:
 	go mod tidy
 
 run:
-	@#go run ${SOURCE} -d H:\fias\fias18 -r 18
+	@go run ${SOURCE} -d H:\\fias\\fias18 -r 18 -v
 	@#go run ${SOURCE} -d H:\\fias\\fias18 -r 18 -v --db_url postgres://postgres:123@localhost:5432/fias?sslmode=disable
-	@go run ${SOURCE} -d H:\\fias\\fias18 -r 18 -v --db_url sqlserver://sa:123@localhost?database=fias
+	@#go run ${SOURCE} -d H:\\fias\\fias18 -r 18 -v --db_url sqlserver://sa:123@localhost?database=fias
 	@#go run ${SOURCE} -d H:\\fias\\fias18 -r 18 -v --db_url root:dnypr1@/fias
 	@#DIR="H:\fias\fias18" REGION="18" go run ${SOURCE} 
 

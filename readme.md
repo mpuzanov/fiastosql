@@ -1,5 +1,4 @@
-# Утилита извлекает данные из классификатора ФИАС (формата dbf) 
-# и записывает в требуемую БД(Sqlite, MSSQL, PostgreSql, MySQL) 
+# Утилита извлекает данные из классификатора ФИАС (формата dbf) и записывает в требуемую БД(Sqlite, MSSQL, PostgreSql, MySQL) 
 
 ## Запуск
 
@@ -15,5 +14,6 @@ region (-r) - номер региона
 verbose (-v) - подробный вывод  
 
 *Строки подключения к БД:*
+
     postgres://postgres:123@localhost:5432/fias?sslmode=disable
     sqlserver://sa:123@localhost:1432?database=fias
